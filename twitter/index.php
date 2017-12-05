@@ -1,3 +1,5 @@
+<!-- this php file is used for the twitter api -->
+
 <!doctype html>
 
 <html lang="en">
@@ -31,7 +33,7 @@ $settings = array(
     'consumer_secret' => "blAOjhXpaExUTkFV0uPBcmrB0AVTe4qXtkqeLxn6Y7oleBtY3z"
 );
 
-
+// twitter api starts
 $url = 'https://api.twitter.com/1.1/search/tweets.json';
 $getfield = '?q=uncbasketball';
 $requestMethod = 'GET';
@@ -40,6 +42,7 @@ $tweetData = json_decode( $twitter->setGetfield($getfield)
              ->buildOauth($url, $requestMethod)
              ->performRequest(),$assoc=TRUE);
 
+// my hard code for the content of the tweets
           foreach($tweetData['statuses'] as $index => $items){
                $userArray = $items['user'];
                echo '<div class="tweet-border row tweet">';
@@ -54,7 +57,7 @@ $tweetData = json_decode( $twitter->setGetfield($getfield)
              }
 echo "<script>pageComplete();</script>"
 ?>
-
+<!-- my scripts go here -->
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 

@@ -1,12 +1,13 @@
 /*these are my styles*/
-/*.twitter-api {
-  background:#bae0f6;
-  font-size:14px;
-  font-family: 'Helvetica', arial, sans-serif;
-}*/
+/*this is for the map*/
 #map {
   height: 400px;
   width: 100%;
+ }
+
+ .gmaps{
+   padding:10px;
+   background-color:#F9F9FB;
  }
 
 body{
@@ -14,6 +15,7 @@ body{
   width:100% !important;
 
 }
+/*twitter api styling*/
 .tweet{
   font-family:helvetica;
   color:#ADABAB;
@@ -25,6 +27,34 @@ body{
 
 }
 
+
+.tweet-name{
+  font-family:helvetica;
+  color:black;
+  font-weight:bold;
+  vertical-align: top;
+  margin:5px;
+  padding:5px;
+display:inline-block;
+float:left;
+}
+img.tweetimg{
+  border-radius:50%;
+float:left;
+margin:10px;
+}
+.tweet-border{
+  border-bottom:1px solid #ADABAB;
+  padding:10px;
+}
+.tweet-text{
+  color:black;
+  font-weight: lighter;
+  vertical-align: top;
+
+
+}
+/*heads are for the bigger black headings over apis*/
 .head1{
   font-family:helvetica;
   color:#ADABAB;
@@ -56,39 +86,21 @@ body{
 }
 
 
-
-.tweet-name{
-  font-family:helvetica;
-  color:black;
-  font-weight:bold;
-  vertical-align: top;
-  margin:5px;
-  padding:5px;
-display:inline-block;
-float:left;
-}
-img.tweetimg{
-  border-radius:50%;
-float:left;
-margin:10px;
-}
-.tweet-border{
-  border-bottom:1px solid #ADABAB;
-  padding:10px;
-}
-.tweet-text{
-  color:black;
-  font-weight: lighter;
-  vertical-align: top;
-
-
-}
+/*this is the large container and row styling*/
 .container{
   width:100%;
   margin:auto;
 background-color:#EEEEEE;
 }
 
+.row{
+  margin:auto;
+
+  padding:10px;
+
+  padding-left:0px;
+}
+/*this is for the menu image*/
 .espn{
   padding:0px ;
   padding-left:10px;
@@ -100,7 +112,7 @@ background-color:#EEEEEE;
 vertical-align: middle !important;
 
 }
-
+/*this is my top navigation*/
 .navbar.navbar-inverse {
   border: none;
   background-color: #2B2C2D !important;
@@ -134,18 +146,7 @@ a.nav-link:hover{
   text-decoration:none;
   color:#D1D1D1 !important;
 }
-.row{
-  margin:auto;
 
-  padding:10px;
-
-  padding-left:0px;
-}
-
-.gmaps{
-  padding:10px;
-  background-color:#F9F9FB;
-}
 
 .navbar-fixed-top{
   padding-top: 0px;
@@ -170,7 +171,7 @@ h3{
   font-family: helvetica;
   font-size:14pt;
 }
-
+/*this is the iframe for the twitter box*/
 iframe{
   width:100%;
   height:98vh;
@@ -180,7 +181,7 @@ iframe{
   padding:0px;
 
 }
-
+/*this is the column for the twitter and flickr apis*/
 .col-md-6{
   margin:auto;
   background-color:#F9F9FB;
